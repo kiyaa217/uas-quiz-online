@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kuis Online Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Kuis Online</h1>
+
+    <form id="quizForm">
+        <div class="question">
+            <p>1. HTML digunakan untuk?</p>
+            <label><input type="radio" name="q1" value="a"> Mengatur logika program</label>
+            <label><input type="radio" name="q1" value="b"> Mendesain tampilan</label>
+            <label><input type="radio" name="q1" value="c"> Membuat struktur web</label>
+            <label><input type="radio" name="q1" value="d"> Mengelola database</label>
+        </div>
+
+        <div class="question">
+            <p>2. CSS berfungsi untuk?</p>
+            <label><input type="radio" name="q2" value="a"> Struktur halaman</label>
+            <label><input type="radio" name="q2" value="b"> Interaksi user</label>
+            <label><input type="radio" name="q2" value="c"> Styling halaman</label>
+            <label><input type="radio" name="q2" value="d"> Backend</label>
+        </div>
+
+        <div class="question">
+            <p>3. JavaScript digunakan untuk?</p>
+            <label><input type="radio" name="q3" value="a"> Styling</label>
+            <label><input type="radio" name="q3" value="b"> Interaksi & logika</label>
+            <label><input type="radio" name="q3" value="c"> Database</label>
+            <label><input type="radio" name="q3" value="d"> Server</label>
+        </div>
+
+        <div class="question">
+            <p>4. Tag HTML untuk paragraf adalah?</p>
+            <label><input type="radio" name="q4" value="a">&lt;div&gt;</label>
+            <label><input type="radio" name="q4" value="b">&lt;p&gt;</label>
+            <label><input type="radio" name="q4" value="c">&lt;span&gt;</label>
+            <label><input type="radio" name="q4" value="d">&lt;h1&gt;</label>
+        </div>
+
+        <div class="question">
+            <p>5. Siapa Dosen matkul Website & Pemograman?</p>
+            <label><input type="radio" name="q5" value="a">Pak Yosee</label>
+            <label><input type="radio" name="q5" value="b">Pak Yusuf</label>
+            <label><input type="radio" name="q5" value="c">Kang Dede</label>
+            <label><input type="radio" name="q5" value="d">Pak Hendro</label>
+        </div>
+
+        <button type="button" class="btn-submit" onclick="checkScore()">Submit</button>
+        <button type="button" class="btn-reset" onclick="resetQuiz()">Ulangi</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
